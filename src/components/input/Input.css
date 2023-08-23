@@ -10,7 +10,7 @@
     font-size: 20px;
 }
 
-.fiel input {
+.field input {
     background-color: #fff;
     outline: 0;
     font-size: 20px;
@@ -23,4 +23,5 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }

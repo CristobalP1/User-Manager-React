@@ -4,7 +4,7 @@ const PrintUserData = (props) => {
 
      return (
         <div>
-            <h1>Holaa</h1>
+            <h1>Datos de usuario</h1>
             <ul>
             {
                 userData.map((el,index) =>(
