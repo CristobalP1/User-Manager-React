@@ -4,12 +4,17 @@ const useForm = (inicial) => {
     const [value,setValue] = useState(inicial);
 
     const handleForm = (e) => {
-        setValue((state)=>({
-            ...state,
+        setValue(()=>({
+            ...value,
             [e.target.name]:e.target.value
         }))
     }
-    return [value,handleForm]
+
+    const reset = () => {
+        setValue(inicial);
+    }
+
+    return [value,handleForm,reset]
 }
 
 export default useForm;
